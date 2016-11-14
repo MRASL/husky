@@ -1,9 +1,13 @@
 controller_frequency: 5.0
-recovery_behaviour_enabled: true
+recovery_behaviour_enabled: false
+
+oscillation_timeout: 10.0
+oscillation_distance: 0.2
 
 NavfnROS:
   allow_unknown: true # Specifies whether or not to allow navfn to create plans that traverse unknown space.
-  default_tolerance: 0.1 # A tolerance on the goal point for the planner.
+  default_tolerance: 0.3 # A tolerance on the goal point for the planner.
+  visualize_potention: true
 
 TrajectoryPlannerROS:
   # Robot Configuration Parameters
